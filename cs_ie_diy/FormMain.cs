@@ -126,7 +126,7 @@ namespace cs_ie_diy
                 // software.SetValue("test", "0", RegistryValueKind.DWord); //二进制信息
                 key.Close();
                 MessageBox.Show("IE版本设置成功！", "提示");
-            }
+            } 
             catch
             {
                 MessageBox.Show("IE版本设置失败！", "提示");

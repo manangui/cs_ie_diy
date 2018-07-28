@@ -149,5 +149,18 @@ namespace cs_ie_diy
         {
             e.Cancel = true;
         }
+
+        private void toolBaidu_Click(object sender, EventArgs e)
+        {
+            webBrowser.Navigate("http://www.baidu.com");
+        }
+
+        private void textBoxUrl_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                webBrowser.Navigate(textBoxUrl.Text);
+            }
+        }
     }
 }
